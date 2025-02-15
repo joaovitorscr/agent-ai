@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import Prism from "prismjs"
 
-import "prismjs/themes/prism-tomorrow.css"
+import "~/styles/prism-theme.css"
 
 const CodeBlock = ({ code, language }: { code: string; language: string }) => {
   const preRef = useRef(null)

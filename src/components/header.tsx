@@ -23,20 +23,16 @@ export function Header() {
               href="#integrations"
               className="text-sm font-medium text-muted-foreground hover:text-primary"
             >
-              Integrating
+              Integration
+            </a>
+            <a
+              href="#pricing"
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
+            >
+              Pricing
             </a>
           </nav>
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button
-              size="sm"
-              className="bg-primary text-primary-foreground hover:bg-primary/90"
-            >
-              Get Started
-            </Button>
-          </div>
+          <Button size="wide">Get Started</Button>
         </div>
       </div>
     </header>
