@@ -19,18 +19,6 @@ export function Header() {
             >
               Features
             </a>
-            <a
-              href="#how-it-works"
-              className="text-sm font-medium text-muted-foreground hover:text-primary"
-            >
-              How it Works
-            </a>
-            <a
-              href="#pricing"
-              className="text-sm font-medium text-muted-foreground hover:text-primary"
-            >
-              Pricing
-            </a>
           </nav>
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="sm">
