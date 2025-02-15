@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router"
 import { Header } from "~/components/header"
 import { FeaturesSection } from "~/components/sections/features"
 import { HeroSection } from "~/components/sections/hero"
+import { IntegrationSection } from "~/components/sections/integration"
 import { MetricsSection } from "~/components/sections/metrics"
 
 export const Route = createFileRoute("/")({
@@ -17,6 +18,7 @@ function Index() {
         <HeroSection />
         <FeaturesSection />
         <MetricsSection />
+        <IntegrationSection />
       </main>
     </div>
   )

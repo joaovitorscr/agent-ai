@@ -1,6 +1,6 @@
 import { Code2, Cpu, Globe, Zap } from "lucide-react"
 
-import { FeatureCard } from "../feature-card"
+import { InfoCard } from "~/components/info-card"
 
 export function FeaturesSection() {
   const features = [
@@ -39,9 +39,9 @@ export function FeaturesSection() {
             Cutting-edge features that put you ahead of the competition.
           </p>
         </div>
-        <div className="grid w-full max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
-            <FeatureCard key={i} feature={feature} />
+            <InfoCard key={i} item={feature} />
           ))}
         </div>
       </div>

@@ -19,6 +19,12 @@ export function Header() {
             >
               Features
             </a>
+            <a
+              href="#integrations"
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
+            >
+              Integrating
+            </a>
           </nav>
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="sm">
