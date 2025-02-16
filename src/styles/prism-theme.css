@@ -37,9 +37,9 @@
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0f2027, #1E353D, #203a43); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0f2027, #1E353D, #203a43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
  }
  
  /* Inline code */

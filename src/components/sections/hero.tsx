@@ -40,21 +40,12 @@ export function HeroSection() {
           </p>
         </div>
         <div className="flex flex-col gap-4 min-[400px]:flex-row">
-          <Button
-            size="lg"
-            className="h-12 bg-primary px-8 text-primary-foreground hover:bg-primary/90"
-          >
-            Start Building Free
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="h-12 border-border/40 bg-background/50 px-8 backdrop-blur hover:bg-muted/50"
-          >
+          <Button size="lg">Start Building Free</Button>
+          <Button variant="secondary" size="lg">
             Book a Demo
           </Button>
         </div>
-        <div className="w-full max-w-4xl rounded-lg border bg-[#2d2d2d]">
+        <div className="w-full max-w-4xl">
           <CodeBlock code={codeSnippet} language="javascript" />
         </div>
       </div>

@@ -4,6 +4,49 @@
 
 @layer base {
   :root {
+    --gradient: linear-gradient(to top left,#00dbde,#fc00ff);
+  
+    --background: 192 65% 3.52%;
+    --foreground: 192 10% 97.2%;
+  
+    --muted: 192 50% 13.2%;
+    --muted-foreground: 192 10% 54.4%;
+  
+    --popover: 192 45% 5.72%;
+    --popover-foreground: 192 10% 97.2%;
+  
+    --card: 192 45% 5.72%;
+    --card-foreground: 192 10% 97.2%;
+  
+    --border: 192 50% 13.2%;
+    --input: 192 50% 13.2%;
+  
+    --primary: 192 100% 44%;
+    --primary-foreground: 192 10% 97.2%;
+  
+    --secondary: 192 50% 13.2%;
+    --secondary-foreground: 192 10% 97.2%;
+  
+    --accent: 192 50% 13.2%;
+    --accent-foreground: 192 10% 97.2%;
+  
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 192 10% 97.2%;
+  
+    --ring: 192 100% 44%;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    
+    --radius: 0.5rem;
+  }
+}
+
+/* @layer base {
+  :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -57,7 +100,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
+} */
 
 @layer base {
   * {
@@ -65,5 +108,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .bg-gradient {
+    background: var(--gradient);
   }
 }

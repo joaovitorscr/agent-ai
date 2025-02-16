@@ -8,7 +8,6 @@ const CodeBlock = ({ code, language }: { code: string; language: string }) => {
 
   useEffect(() => {
     // @ts-expect-error Need to initialize as null
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
     Prism.highlightElement(preRef.current)
   }, [])
 
