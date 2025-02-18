@@ -6,6 +6,7 @@ import { FeaturesSection } from "~/components/sections/features"
 import { HeroSection } from "~/components/sections/hero"
 import { IntegrationSection } from "~/components/sections/integration"
 import { MetricsSection } from "~/components/sections/metrics"
+import { PricingSection } from "~/components/sections/pricing"
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -20,6 +21,7 @@ function Index() {
         <FeaturesSection />
         <MetricsSection />
         <IntegrationSection />
+        <PricingSection />
       </main>
       <Footer />
     </div>
