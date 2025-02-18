@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router"
 
 import { Footer } from "~/components/footer"
 import { Header } from "~/components/header"
+import { CallOutSection } from "~/components/sections/call-out"
 import { FeaturesSection } from "~/components/sections/features"
 import { HeroSection } from "~/components/sections/hero"
 import { IntegrationSection } from "~/components/sections/integration"
@@ -22,6 +23,7 @@ function Index() {
         <MetricsSection />
         <IntegrationSection />
         <PricingSection />
+        <CallOutSection />
       </main>
       <Footer />
     </div>

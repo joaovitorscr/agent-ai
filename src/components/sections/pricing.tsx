@@ -1,5 +1,6 @@
 import { Users } from "lucide-react"
 
+import { Glow, GlowArea } from "../glow"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 
@@ -15,7 +16,7 @@ function PlanCard({ plan }: { plan: Plan }) {
   const { title, price, custom, description, perks } = plan
 
   return (
-    <Card className="relative border-border/40 bg-card/50 p-6 backdrop-blur transition-all hover:border-border/80">
+    <Card className="p-6 hover:border-border/80">
       <div className="space-y-4">
         <h3 className="text-2xl font-bold">{title}</h3>
         {custom ? (
@@ -75,16 +76,16 @@ export function PricingSection() {
 
   return (
     <section id="pricing" className="border-t border-border/40 bg-card/40">
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center space-y-12 px-6 py-24 lg:px-8">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center space-y-12 px-6 py-16 lg:px-8">
         <div className="text-center">
-          <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-border/40 bg-background px-7 py-2 shadow-md backdrop-blur transition-all hover:border-border/80 hover:bg-muted/50">
+          <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-border/40 bg-background px-7 py-2 shadow-md backdrop-blur transition-all hover:border-border/80 hover:bg-muted/50">
             <Users className="h-5 w-5 text-primary" />
             <p className="text-sm font-medium">Flexible Plans</p>
           </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Start Building Today
           </h2>
-          <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-[800px] text-muted-foreground">
             Choose the perfect plan for your needs. Scale as you grow.
           </p>
         </div>

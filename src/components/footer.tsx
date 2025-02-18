@@ -9,9 +9,14 @@ export function Footer() {
           <Bot className="h-6 w-6 text-primary" />
           <span className="font-bold">AgentAI</span>
         </div>
-        <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-          Built with 🚀 by the AgentAI team. © 2024 AgentAI Inc.
-        </p>
+        <div className="flex flex-col items-center gap-1 sm:flex-row">
+          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+            Built by the AgentAI team.
+          </p>
+          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+            © 2024 AgentAI
+          </p>
+        </div>
         <nav className="flex gap-4">
           <Link
             to="#"

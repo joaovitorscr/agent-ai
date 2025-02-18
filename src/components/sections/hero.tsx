@@ -1,28 +1,12 @@
 import { Sparkles } from "lucide-react"
 
 import { Button } from "~/components/ui/button"
-import CodeBlock from "../ui/code-block"
 
 export function HeroSection() {
-  const codeSnippet = `
-  import { Agent } from '@agent-ai/core'
-
-  const agent = new Agent({
-    name: 'DataAnalyst',
-    capabilities: [
-      'analysis',
-      'visualization'
-    ]
-  })
-
-  await agent.analyze('sales-data.csv')
-  `
-
   return (
     <section className="relative overflow-hidden">
       <div className="absolute left-1/2 top-32 h-[500px] w-[800px] -translate-x-1/2 bg-primary/40 opacity-20 blur-[100px]" />
-
-      <div className="relative mx-auto flex min-h-[calc(100vh-3.5rem)] w-full flex-col items-center justify-start space-y-10 px-6 py-12 text-center lg:px-8 lg:py-24">
+      <div className="relative mx-auto flex w-full flex-col items-center justify-start space-y-10 px-6 py-12 text-center sm:min-h-[480px] lg:min-h-[70dvh] lg:px-8 lg:py-52">
         <div className="space-y-4">
           <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-border/40 bg-background px-7 py-2 shadow-md backdrop-blur transition-all hover:border-border/80 hover:bg-muted/50">
             <Sparkles className="h-5 w-5 text-primary" />
@@ -44,9 +28,6 @@ export function HeroSection() {
           <Button variant="secondary" size="lg">
             Book a Demo
           </Button>
-        </div>
-        <div className="w-full max-w-4xl">
-          <CodeBlock code={codeSnippet} language="javascript" />
         </div>
       </div>
     </section>

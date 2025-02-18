@@ -1,4 +1,4 @@
-import { Code2, Cpu, Globe, Zap } from "lucide-react"
+import { Code2, Cpu, Globe, HardHat, Zap } from "lucide-react"
 
 import { InfoCard } from "~/components/info-card"
 
@@ -22,6 +22,12 @@ export function FeaturesSection() {
         "Integrate with your existing stack using our SDKs and APIs. Support for all major languages",
       icon: Code2,
     },
+    {
+      title: "Built by Developers for Developers",
+      description:
+        "Our main concern is to provide with our users the best developer experience possible",
+      icon: HardHat,
+    },
   ]
 
   return (
@@ -39,7 +45,7 @@ export function FeaturesSection() {
             Cutting-edge features that put you ahead of the competition.
           </p>
         </div>
-        <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, i) => (
             <InfoCard key={i} item={feature} />
           ))}

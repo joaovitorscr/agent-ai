@@ -11,7 +11,7 @@ export function Header() {
           <Bot className="h-6 w-6 text-primary" />
           <span className="font-bold">AgentAI</span>
         </Link>
-        <ul className="flex gap-6">
+        <ul className="hidden gap-6 sm:flex">
           <a
             href="#features"
             className="text-sm font-medium text-muted-foreground hover:text-primary"
