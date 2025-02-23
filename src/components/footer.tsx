@@ -11,9 +11,6 @@ export function Footer() {
         </div>
         <div className="flex flex-col items-center gap-1 sm:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            Built by the AgentAI team.
-          </p>
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © 2024 AgentAI
           </p>
         </div>
